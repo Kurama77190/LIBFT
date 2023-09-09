@@ -2,11 +2,15 @@
 #include <unistd.h>
 #include <stdio.h>
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int i = 0;
-	int nb = 0;
-	int sign = 1;
+	int i;
+	int nb;
+	int sign;
+
+	i = 0;
+	nb = 0;
+	sign = 1;
 	while ((nptr[i] > 8 && nptr[i] < 14 ) || nptr[i] == 32)
 	{
 		i++;
