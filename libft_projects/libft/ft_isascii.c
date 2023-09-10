@@ -6,13 +6,13 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:30:41 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:36:19 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:48:33 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_is_ascii(char *str)
+int	ft_isascii(char str)
 {
 	int	i;
 

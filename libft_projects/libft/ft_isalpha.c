@@ -6,14 +6,13 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:30:05 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:36:01 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:48:51 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
+#include "libft.h"
 
-int	ft_str_is_alpha(char *str)
+int	ft_isalpha(char *str)
 {
 	int	i;
 

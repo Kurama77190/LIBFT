@@ -6,13 +6,11 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:27:02 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:35:10 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:38:08 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

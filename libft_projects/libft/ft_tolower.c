@@ -6,11 +6,11 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:34:15 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:43:59 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:39:19 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(char c)
 {

@@ -6,13 +6,13 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:28:43 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:29:54 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:46:03 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_is_alphanumerique(char *str)
+int	ft_isalnum(char *str)
 {
 	int	i;
 

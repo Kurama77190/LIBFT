@@ -6,11 +6,13 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:25:47 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:35:27 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:46:59 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_digit(char *str)
+#include "libft.h"
+
+int	ft_isdigit(char *str)
 {
 	int	i;
 

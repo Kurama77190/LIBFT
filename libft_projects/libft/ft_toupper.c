@@ -6,11 +6,11 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:34:34 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:34:35 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:39:23 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(char c)
 {

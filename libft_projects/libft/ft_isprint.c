@@ -6,11 +6,11 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:32:24 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 20:36:38 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:39:06 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isprint(char *str)
 {
