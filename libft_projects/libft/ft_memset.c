@@ -6,11 +6,11 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 21:04:12 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/10 21:05:26 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 01:11:31 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	*memset(void *s, int c, size_t n)
 {
- // GO DOCUMENTER
+	
 }
