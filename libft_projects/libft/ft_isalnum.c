@@ -1,25 +1,38 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/10 20:28:43 by sben-tay          #+#    #+#             */
+/*   Updated: 2023/09/10 20:29:54 by sben-tay         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
-int ft_is_alphanumerique(char *str)
+int	ft_is_alphanumerique(char *str)
 {
-    int i = 0;
+	int	i;
 
-    if (str[0] == '\0')
-    {
-        return (1);
-    }
-    while (str[i])
-    {
-        if (str[i] >= '0' && str[i] <= '9')
-            i++;
-        else if (str[i] >= 'a' && str[i] <= 'z')
-            i++;
-        else if (str[i] >= 'A' && str[i] <= 'Z')
-            i++;
-        else
-            return (0);
-    }
-    return (1);
+	i = 0;
+	if (str[0] == '\0')
+	{
+		return (1);
+	}
+	while (str[i])
+	{
+		if (str[i] >= '0' && str[i] <= '9')
+			i++;
+		else if (str[i] >= 'a' && str[i] <= 'z')
+			i++;
+		else if (str[i] >= 'A' && str[i] <= 'Z')
+			i++;
+		else
+			return (0);
+	}
+	return (1);
 }
 
 // int main (int argc, char **argv)

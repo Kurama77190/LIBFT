@@ -1,20 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/10 20:32:24 by sben-tay          #+#    #+#             */
+/*   Updated: 2023/09/10 20:36:38 by sben-tay         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-
-int ft_isprint(char *str)
+int	ft_isprint(char *str)
 {
-    int i = 0;
+	int	i;
 
-    if (str[0] == '\0')
-    {
-        return (1);
-    }
-    while (str[i])
-    {
-        if (str[i] >= 32 && str[i] <= 126)
-        	 i++;
-        else
-            return (0);
-    }
-    return (1);
+	i = 0;
+	if (str[0] == '\0')
+	{
+		return (1);
+	}
+	while (str[i])
+	{
+		if (str[i] >= 32 && str[i] <= 126)
+			i++;
+		else
+			return (0);
+	}
+	return (1);
 }
