@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:30:41 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/11 19:22:25 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 20:05:55 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (0);
-	return (1);
+		return (1);
+	return (0);
 }
 
 // int	main(void)

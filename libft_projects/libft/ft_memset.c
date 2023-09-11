@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 21:04:12 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/11 01:20:04 by sben-tay         ###   ########.fr       */
+/*   Created: 2023/09/11 19:52:24 by sben-tay          #+#    #+#             */
+/*   Updated: 2023/09/11 20:00:48 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// void	*memset(void *s, int c, size_t n);
-//
+
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len);
