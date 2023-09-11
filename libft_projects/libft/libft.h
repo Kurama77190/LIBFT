@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 01:34:10 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/11 19:52:33 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 22:04:39 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int				ft_isprint(int c);
 
 // int				ft_memcmp(const void *s1, const void *s2, size_t n);
 
-// void			*ft_memcpy(void *dest, const void *src, size_t n);
+void			*ft_memcpy(void *dest, const void *src, size_t n);
 
 // void			*ft_memmove(void *dst, const void *src, size_t len);
 

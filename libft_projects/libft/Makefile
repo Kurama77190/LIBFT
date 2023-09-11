@@ -6,7 +6,7 @@
 #    By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/11 01:20:13 by sben-tay          #+#    #+#              #
-#    Updated: 2023/09/11 19:53:05 by sben-tay         ###   ########.fr        #
+#    Updated: 2023/09/11 23:29:51 by sben-tay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS			=	ft_isalnum.c ft_isprint.c ft_isalpha.c \
 					ft_strncmp.c ft_atoi.c \
 					ft_tolower.c ft_bzero.c   ft_isascii.c \
 					ft_strlen.c ft_memset.c \
-					ft_toupper.c ft_isdigit.c 
+					ft_toupper.c ft_isdigit.c ft_memcpy.c
 OBJS			= $(SRCS:.c=.o)
 
 # BONUS			=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
