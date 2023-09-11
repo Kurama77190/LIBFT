@@ -6,27 +6,23 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:32:24 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/11 01:39:06 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 19:29:14 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(char *str)
+int	ft_isprint(int c)
 {
-	int	i;
-
-	i = 0;
-	if (str[0] == '\0')
-	{
+	if (c >= 32 && c <= 126)
 		return (1);
-	}
-	while (str[i])
-	{
-		if (str[i] >= 32 && str[i] <= 126)
-			i++;
-		else
-			return (0);
-	}
-	return (1);
+	return (0);
 }
+
+// int	main(void)
+// {
+// 	int	i;
+
+// 	i = 127;
+//     printf("%d\n", ft_isprint(i));
+// }

@@ -6,37 +6,23 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 20:30:05 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/11 01:48:51 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/11 19:21:15 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char *str)
+int	ft_isalpha(int c)
 {
-	int	i;
-
-	i = 0;
-	if (str[0] == '\0')
-	{
-		return (1);
-	}
-	while (str[i])
-	{
-		if (str[i] < 65 || str[i] > 122 || (str[i] > 90 && str[i] < 97))
-		{
-			return (0);
-		}
-		else
-			i++;
-	}
+	if (c < 65 || c > 122 || (c > 90 && c < 97))
+		return (0);
 	return (1);
 }
 
-// int main (int argc, char **argv)
+// int	main(void)
 // {
-// 	(void) argc;
-// 	(void) argv;
-// 	char	str[] = "";
-// 	printf("%d\n", ft_str_is_alpha(str));
+// 	int	i;
+
+// 	i = '0';
+//     printf("%d\n", ft_isalpha(i));
 // }
