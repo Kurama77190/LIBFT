@@ -6,15 +6,15 @@
 #    By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/11 01:20:13 by sben-tay          #+#    #+#              #
-#    Updated: 2023/09/12 02:26:21 by sben-tay         ###   ########.fr        #
+#    Updated: 2023/09/12 21:18:19 by sben-tay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 
-SRCS			=	ft_isalnum.c ft_isprint.c ft_isalpha.c ft_memmove.c \
-					ft_strncmp.c ft_atoi.c \
-					ft_tolower.c ft_bzero.c   ft_isascii.c \
+SRCS			=	ft_isalnum.c  ft_isprint.c  ft_isalpha.c  ft_memmove.c  ft_memcmp.c \
+					ft_strncmp.c  ft_atoi.c  ft_memchr.c  ft_strchr.c  ft_strrchr.c \
+					ft_tolower.c  ft_bzero.c  ft_isascii.c  ft_strnstr.c \
 					ft_strlen.c ft_memset.c \
 					ft_toupper.c ft_isdigit.c ft_memcpy.c
 OBJS			= $(SRCS:.c=.o)
