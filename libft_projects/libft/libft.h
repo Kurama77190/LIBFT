@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 01:34:10 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/12 02:13:04 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/12 03:42:40 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,6 @@ int				ft_toupper(int c);
 
 // void			ft_lstiter(t_list *lst, void (*f)(void*));
 
-// t_list			*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *));
+// t_list		*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *));
 
 #endif
