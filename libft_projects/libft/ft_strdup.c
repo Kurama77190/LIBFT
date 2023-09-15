@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 19:16:09 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/13 12:07:12 by sben-tay         ###   ########.fr       */
+/*   Created: 2023/09/14 10:10:07 by sben-tay          #+#    #+#             */
+/*   Updated: 2023/09/14 11:08:06 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *find, size_t len)
+char	*ft_strdup(const char *s1)
 {
+	char	*str;
+	size_t	len;
 	size_t	i;
-	size_t	j;
 
 	i = 0;
-	if (*find == '\0')
-		return ((char *)str);
-	while (i < len && str[i] != '\0')
+	len = ft_strlen(s1);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (str == NULL)
+		return (NULL);
+	while (s1[i])
 	{
-		j = 0;
-		while (i + j < len && str[i + j] == find[j] && find[j] != '\0')
-			j++;
-		if (find[j] == '\0')
-			return ((char *)(str + i));
+		str[i] = s1[i];
 		i++;
 	}
-	return (NULL);
+	str[i] = '\0';
+	return (str);
 }

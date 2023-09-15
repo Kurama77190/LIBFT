@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 19:16:09 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/13 12:07:12 by sben-tay         ###   ########.fr       */
+/*   Created: 2023/09/13 12:45:18 by sben-tay          #+#    #+#             */
+/*   Updated: 2023/09/14 10:09:02 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *find, size_t len)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	i;
-	size_t	j;
+	size_t	c;
+	size_t	d;
 
-	i = 0;
-	if (*find == '\0')
-		return ((char *)str);
-	while (i < len && str[i] != '\0')
+	if (size <= ft_strlen(dst))
+		return (size + ft_strlen(src));
+	c = ft_strlen(dst);
+	d = 0;
+	while (src[d] != '\0' && c + 1 < size)
 	{
-		j = 0;
-		while (i + j < len && str[i + j] == find[j] && find[j] != '\0')
-			j++;
-		if (find[j] == '\0')
-			return ((char *)(str + i));
-		i++;
+		dst[c] = src[d];
+		c++;
+		d++;
 	}
-	return (NULL);
+	dst[c] = '\0';
+	return (ft_strlen(dst) + ft_strlen(&src[d]));
 }

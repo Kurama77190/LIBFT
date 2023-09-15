@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 01:34:10 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/12 21:19:52 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/14 11:10:53 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int				ft_atoi(const char *str);
 
 void			ft_bzero(void *s, size_t n);
 
-// void			*ft_calloc(size_t count, size_t size);
+void			*ft_calloc(size_t count, size_t size);
 
 int				ft_isalnum(int c);
 
@@ -65,13 +65,13 @@ void			*ft_memset(void *b, int c, size_t len);
 
 char			*ft_strchr(const char *s, int c);
 
-// char			*ft_strdup(const char *s1);
+char			*ft_strdup(const char *s1);
 
 // char			*ft_strjoin(char const *s1, char const *s2);
 
-// size_t			ft_strlcat(char *dst, const char *src, size_t size);
+size_t			ft_strlcat(char *dst, const char *src, size_t size);
 
-// size_t			ft_strlcpy(char *dst, const char *src, size_t size);
+size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 
 size_t			ft_strlen(const char *str);
 
