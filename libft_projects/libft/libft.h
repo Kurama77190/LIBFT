@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 01:34:10 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/14 11:10:53 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/16 18:37:18 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ char			*ft_strrchr(const char *s, int c);
 
 // char			*ft_strtrim(char const *s1, char const *set);
 
-// char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 
 int				ft_tolower(int c);
 
