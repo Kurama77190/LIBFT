@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 01:34:10 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/25 17:46:03 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/09/26 13:19:27 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void			*ft_memset(void *b, int c, size_t len);
 
 // void			ft_putstr_fd(char *s, int fd);
 
-// char			**ft_split(char const *s, char c);
+char			**ft_split(char const *s, char c);
 
 char			*ft_strchr(const char *s, int c);
 
