@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 01:34:10 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/11/10 11:43:53 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:07:49 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void			*ft_memset(void *b, int c, size_t len);
 
 void			ft_putchar_fd(char c, int fd);
 
-// void			ft_putendl_fd(char *s, int fd);
+void			ft_putendl_fd(char *s, int fd);
 
 void			ft_putnbr_fd(int n, int fd);
 
@@ -93,13 +93,13 @@ int				ft_tolower(int c);
 
 int				ft_toupper(int c);
 
-// t_list			*ft_lstnew(void *content);
+t_list			*ft_lstnew(void *content);
 
 // int				ft_lstsize(t_list *lst);
 
 // t_list			*ft_lstlast(t_list *lst);
 
-// void			ft_lstadd_front(t_list **alst, t_list *new);
+void			ft_lstadd_front(t_list **alst, t_list *new);
 
 // void			ft_lstadd_back(t_list **alst, t_list *new);
 
