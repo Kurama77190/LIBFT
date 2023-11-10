@@ -6,7 +6,7 @@
 /*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 01:34:10 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/26 13:19:27 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/11/10 11:43:53 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int				ft_isdigit(int c);
 
 int				ft_isprint(int c);
 
-// char			*ft_itoa(int n);
+char			*ft_itoa(int n);
 
 void			*ft_memchr(const void *s, int c, size_t n);
 
@@ -53,13 +53,13 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 
 void			*ft_memset(void *b, int c, size_t len);
 
-// void			ft_putchar_fd(char c, int fd);
+void			ft_putchar_fd(char c, int fd);
 
 // void			ft_putendl_fd(char *s, int fd);
 
-// void			ft_putnbr_fd(int n, int fd);
+void			ft_putnbr_fd(int n, int fd);
 
-// void			ft_putstr_fd(char *s, int fd);
+void			ft_putstr_fd(char *s, int fd);
 
 char			**ft_split(char const *s, char c);
 
@@ -75,9 +75,9 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 
 size_t			ft_strlen(const char *str);
 
-// void			ft_striteri(char *s, void (*f)(unsigned int, char*));
+void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 
-// char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 
