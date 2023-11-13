@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: samy <samy@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:06:54 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/11/10 16:44:20 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/11/13 23:21:24 by samy             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,12 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-
 // int main ()
 // {
 // 	char *c = "nn";
 // 	char *d = "ouiii";
 // 	char *e = "NTM";
 // 	char *f = "GG";
-	
 // 	t_list *lst;
 // 	lst = malloc(sizeof(t_list));
 // 	t_list *new;

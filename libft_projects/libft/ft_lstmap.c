@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: samy <samy@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:38:44 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/11/13 16:54:59 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/11/13 23:19:57 by samy             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *))
 
 	if (!lst || !f)
 		return (NULL);
-
 	new_list = NULL;
-
 	while (lst)
 	{
 		ft_lstadd_back(&new_list, ft_lstnew((*f)(lst->content)));
@@ -31,6 +29,5 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *))
 		}
 		lst = lst->next;
 	}
-
 	return (new_list);
 }

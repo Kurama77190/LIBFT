@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: samy <samy@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 03:11:41 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/09/25 03:09:50 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/11/13 23:21:11 by samy             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ size_t	ft_strlen(const char *str)
 	}
 	return (i);
 }
-
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -54,7 +53,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i] = '\0';
 	return (str);
 }
-
 
 // int main	(void)
 // {
