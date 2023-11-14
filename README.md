@@ -9,39 +9,93 @@ Ce projet vise à renforcer la compréhension des étudiants des concepts fondam
 
 Voici les descriptions de chaque fonction de ce projet
 ```
-ft_memset : Remplit une zone de mémoire avec une valeur donnée.
-ft_bzero : Met à zéro une zone de mémoire.
-ft_memcpy : Copie une zone de mémoire source dans une zone de mémoire destination.
-ft_memmove : Copie une zone de mémoire avec une gestion correcte du chevauchement.
-ft_memchr : Recherche un caractère dans une zone de mémoire.
-ft_memcmp : Compare deux zones de mémoire.
-ft_strlen : Calcule la longueur d'une chaîne de caractères.
-ft_strlcpy : Copie une chaîne source dans une destination tout en garantissant une taille limite.
-ft_strlcat : Concatène deux chaînes tout en garantissant une taille limite.
-ft_strchr : Recherche la première occurrence d'un caractère dans une chaîne.
-ft_strrchr : Recherche la dernière occurrence d'un caractère dans une chaîne.
-ft_strncmp : Compare les n premiers caractères de deux chaînes.
-ft_strstr : Recherche une sous-chaîne dans une chaîne.
-ft_atoi : Convertit une chaîne en un entier.
-ft_isalpha, ft_isdigit, ft_isalnum : Vérifient le type des caractères.
-ft_toupper, ft_tolower : Convertissent un caractère en majuscule ou minuscule.
-ft_calloc : Alloue et initialise une zone de mémoire à zéro.
-ft_strdup : Duplique une chaîne de caractères.
-ft_substr : Extrait une sous-chaîne d'une chaîne donnée.
-ft_strjoin : Concatène deux chaînes de caractères.
-ft_strtrim : Supprime les caractères blancs en début et fin de chaîne.
-ft_split : Divise une chaîne en tableau de sous-chaînes en fonction d'un délimiteur.
-ft_itoa : Convertit un entier en une chaîne de caractères.
-ft_strmapi : Applique une fonction à chaque caractère d'une chaîne.
-ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd : Affichent des données dans un fichier descripteur donné.
-ft_lstnew : Crée un nouvel élément de liste chaînée.
-ft_lstadd_front : Ajoute un élément au début de la liste chaînée.
-ft_lstsize : Calcule la taille de la liste chaînée.
-ft_lstlast : Renvoie le dernier élément de la liste chaînée.
-ft_lstadd_back : Ajoute un élément à la fin de la liste chaînée.
-ft_lstdelone : Supprime un élément de la liste sans perdre les éléments restants.
-ft_lstclear : Supprime et libère la mémoire de tous les éléments d'une liste chaînée.
-ft_lstiter : Applique une fonction à chaque élément de la liste chaînée.
-ft_lstmap : Crée une nouvelle liste en appliquant une fonction à chaque élément de la liste originale.
-```
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Fonctions de manipulation de la mémoire     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+- **ft_memset** : Remplit une zone de mémoire avec une valeur donnée.
+
+- **ft_bzero** : Met à zéro une zone de mémoire.
+
+- **ft_memcpy** : Copie une zone de mémoire source dans une zone de mémoire destination.
+
+- **ft_memmove** : Copie une zone de mémoire avec une gestion correcte du chevauchement.
+
+- **ft_memchr** : Recherche un caractère dans une zone de mémoire.
+
+- **ft_memcmp** : Compare deux zones de mémoire.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Fonctions de manipulation de chaînes de caractères     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+- **ft_strlen** : Calcule la longueur d'une chaîne de caractères.
+
+- **ft_strlcpy** : Copie une chaîne source dans une destination tout en garantissant une taille limite.
+
+- **ft_strlcat** : Concatène deux chaînes tout en garantissant une taille limite.
+
+- **ft_strchr** : Recherche la première occurrence d'un caractère dans une chaîne.
+
+- **ft_strrchr** : Recherche la dernière occurrence d'un caractère dans une chaîne.
+
+- **ft_strncmp** : Compare les n premiers caractères de deux chaînes.
+
+- **ft_strstr** : Recherche une sous-chaîne dans une chaîne.
+
+- **ft_atoi** : Convertit une chaîne en un entier.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Fonctions de manipulation de caractères     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+- **ft_isalpha, ft_isdigit, ft_isalnum** : Vérifient le type des caractères.
+
+- **ft_toupper, ft_tolower** : Convertissent un caractère en majuscule ou minuscule.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Fonctions de gestion de la mémoire     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+- **ft_calloc** : Alloue et initialise une zone de mémoire à zéro.
+
+- **ft_strdup** : Duplique une chaîne de caractères.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Fonctions de manipulation de chaînes de caractères avancées     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+- **ft_substr** : Extrait une sous-chaîne d'une chaîne donnée.
+
+- **ft_strjoin** : Concatène deux chaînes de caractères.
+
+- **ft_strtrim** : Supprime les caractères blancs en début et fin de chaîne.
+
+- **ft_split** : Divise une chaîne en tableau de sous-chaînes en fonction d'un délimiteur.
+
+- **ft_itoa** : Convertit un entier en une chaîne de caractères.
+
+- **ft_strmapi** : Applique une fonction à chaque caractère d'une chaîne.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Fonctions de manipulation de listes chaînées     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+- **ft_lstnew** : Crée un nouvel élément de liste chaînée.
+
+- **ft_lstadd_front** : Ajoute un élément au début de la liste chaînée.
+
+- **ft_lstsize** : Calcule la taille de la liste chaînée.
+
+- **ft_lstlast** : Renvoie le dernier élément de la liste chaînée.
+
+- **ft_lstadd_back** : Ajoute un élément à la fin de la liste chaînée.
+
+- **ft_lstdelone** : Supprime un élément de la liste sans perdre les éléments restants.
+
+- **ft_lstclear** : Supprime et libère la mémoire de tous les éléments d'une liste chaînée.
+
+- **ft_lstiter** : Applique une fonction à chaque élément de la liste chaînée.
+
+- **ft_lstmap** : Crée une nouvelle liste en appliquant une fonction à chaque élément de la liste originale.
+```
