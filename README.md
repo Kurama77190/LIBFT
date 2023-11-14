@@ -99,3 +99,4 @@ Voici les descriptions de chaque fonction de ce projet
 
 - **ft_lstmap** : Crée une nouvelle liste en appliquant une fonction à chaque élément de la liste originale.
 ```
+![image](https://github.com/Kurama77190/LIBFT/assets/141369136/99c35cdc-5b1e-4d0c-8770-25862bbbdff7)
