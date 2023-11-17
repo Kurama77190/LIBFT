@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sben-tay <sben-tay@student.42.paris.fr>    +#+  +:+       +#+        */
+/*   By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 04:03:45 by sben-tay          #+#    #+#             */
-/*   Updated: 2023/11/14 04:03:48 by sben-tay         ###   ########.fr       */
+/*   Updated: 2023/11/17 15:54:26 by sben-tay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	ft_bzero(void *s, size_t n)
 
 	str = s;
 	i = 0;
-	if (!s)
-		return ;
 	while (i < n)
 	{
 		str[i] = 0;
