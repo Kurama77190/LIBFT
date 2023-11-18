@@ -6,7 +6,7 @@
 #    By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/14 04:09:14 by sben-tay          #+#    #+#              #
-#    Updated: 2023/11/18 12:12:46 by sben-tay         ###   ########.fr        #
+#    Updated: 2023/11/18 13:52:20 by sben-tay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,9 +53,5 @@ re:				fclean $(NAME)
 
 bonus:			$(OBJS) $(BONUS_OBJS)
 				ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS_OBJS)
-	cc -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)
-
+				
 .PHONY:			all clean fclean re bonus
