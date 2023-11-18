@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sben-tay <sben-tay@student.42.fr>          +#+  +:+       +#+         #
+#    By: sben-tay <sben-tay@student.42.paris.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/14 04:09:14 by sben-tay          #+#    #+#              #
-#    Updated: 2023/11/18 13:52:20 by sben-tay         ###   ########.fr        #
+#    Updated: 2023/11/15 17:02:09 by akdovlet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,9 @@ SRCS			=	ft_isalnum.c  ft_isprint.c  ft_isalpha.c  ft_memmove.c  ft_memcmp.c \
 					ft_striteri.c  ft_putchar_fd.c  ft_strmapi.c  ft_itoa.c  ft_putstr_fd.c  ft_putnbr_fd.c \
 					ft_putendl_fd.c \
 					
-					
+
+HEADER=libft.h
+
 OBJS			= $(SRCS:.c=.o)
 
 BONUS			=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
@@ -28,8 +30,8 @@ BONUS			=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 					ft_lstmap.c ft_lstdelone.c ft_lstclear.c
 BONUS_OBJS		= $(BONUS:.c=.o)
 
-.c.o:
-		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+%.c%.o:
+	${CC} ${CFLAGS} -c ${HEADER} $< -o ${<:.c=.o}
 
 CC				= cc
 RM				= rm -f
@@ -39,9 +41,12 @@ NAME			= libft.a
 
 all:			$(NAME)
 
-$(NAME):		$(OBJS)
+$(NAME):		$(OBJS) ${HEADER}
 				ar rc $(NAME) $(OBJS)
 				ranlib ${NAME}
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	cc -nostartfiles -shared -o libft.so $(OBJS)
 
 clean:
 				$(RM) $(OBJS) $(BONUS_OBJS)
@@ -49,9 +54,9 @@ clean:
 fclean:			clean
 				$(RM) $(NAME)
 
-re:				fclean $(NAME)
+re:				fclean all
 
 bonus:			$(OBJS) $(BONUS_OBJS)
 				ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
-				
+
 .PHONY:			all clean fclean re bonus
